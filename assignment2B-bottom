@@ -1,0 +1,49 @@
+//Bottom
+
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#starks-panel" class="mdl-tabs__tab is-active">Map</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Health Data</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Average Steps</a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="Map">
+    <ul>
+      <li>From</li>
+      <li>To</li>
+    </ul>
+  </div>
+  
+    <div class="mdl-tabs__panel" id="Health Data">
+    <ul>
+      <li>Me</li>
+      <li>Fitness</li>
+      <li>Diet</li>
+    </ul>
+  </div>
+    
+    <div class="mdl-tabs__panel is-active" id="Me">
+    <ul>
+      <li>Date of Birth</li>
+      <li>Sex</li>
+      <li>Height</li>
+      <li>Weight</li>
+      <li>BMI</li>
+      <li>Lean Body Mass</li>
+    </ul>
+  </div>
+    
+    <div class="mdl-tabs__panel is-active" id="Diet">
+    <ul>
+      <li>Calorie Intake</li>
+    </ul>
+  </div>    
+  
+    <div class="mdl-tabs__panel" id="Average Steps">
+    <ul>
+      <li>Daily Average</li>
+      <li>Weekly Average</li>
+      <li>Monthly Average</li>
+    </ul>
+  </div>
+</div>
