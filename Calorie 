@@ -1,0 +1,52 @@
+// calorie calculator
+ 
+function CalorieCalculator()
+{
+    var Self = this;
+    var Height = "";
+    var Weight = "";
+    var Calorie = "";
+
+	this.Calorie = function(Calorie)
+    {
+		Calorie = CalorieCalculator;
+		
+        var button1= {
+                title:   "Distance",
+                onClick: "CalorieCalculator.Distance()",
+                id:      "User-Distance"           }
+    
+    	var button2= {
+                title:   "Weight",   
+                onClick: "CalorieCalculator.Weight()",
+                id:      "User-Weight" }
+ 		var button3= {
+                title:   "Calculate Calorie",   
+                onClick: "CalorieCalculator.Calorie",
+                id:      "Calorie" }
+     
+    	var buttons=[button1,button2,button3];
+    	CalorieCalculator.addButtons(buttons);
+    
+    	window.addEventListener("deviceorientation", write, true);
+	}
+	
+
+	function Calorie()
+    {
+		var Heat = Weight*Distance*1.036
+        if(Distance != "" && Weight != "" && Calorie != "")
+        {Distance(); Calorie();}
+		CalorieCalculator.Calorie + "<br> Distance is " + Distance + "<br> Weight is "+ Weight + "<br> Calorie " + Calorie
+	}
+	
+	this.Distance = function()
+	{
+       Height = Number(prompt("Please enter your Distance(km)"))
+   }
+    
+    this.Weight = function()
+	{
+       Weight = Number(prompt("Please enter your weight(kg)"))
+   }
+    
